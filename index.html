@@ -1,58 +1,27 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Test : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Test</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ValentinesDay/test">View on GitHub</a>
-
-          <h1 id="project_title">Test</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ValentinesDay/test/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ValentinesDay/test/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!DOCTYPE html&gt;
-
-  </p>Mike &amp; Eli
+  <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+<title>Mike & Eli</title>
+  <style>
     body {
-      font-family: &amp;#39;VT323&amp;#39;, cursive;
+      font-family: 'VT323', cursive;
       text-align: center;
-      background: url(&amp;quot;&lt;a href="http://img1.etsystatic.com/000/0/5605790/il_570xN.317431097.jpg%22"&gt;http://img1.etsystatic.com/000/0/5605790/il_570xN.317431097.jpg&amp;quot;&lt;/a&gt;);
+      background: url("http://img1.etsystatic.com/000/0/5605790/il_570xN.317431097.jpg");
       background-size: cover;
       color: #f22;
       font-family: helvetica;
   }
   h1 {
-      font-family: &amp;#39;VT323&amp;#39;, cursive;
+      font-family: 'VT323', cursive;
       font-size: 80px;
     }
   h2 {
-      font-family: &amp;#39;VT323&amp;#39;, cursive;
+      font-family: 'VT323', cursive;
       font-size: 45px;
       color: black;
   }
 input {
-      font-family: &amp;#39;VT323&amp;#39;, cursive;
+      font-family: 'VT323', cursive;
       border: 10p;
       color: red;
       font-size: 20px; 
@@ -63,44 +32,49 @@ input[type=text] {
   -webkit-border-radius: 5px;
 border-radius: 5px;
 }
-input[type=text]:focus {border-color:black; color: red; }&lt;/p&gt;
+input[type=text]:focus {border-color:black; color: red; }
 
-&lt;p&gt;input[type=submit] {padding:5px 15px; background:black; border:0 none;
+input[type=submit] {padding:5px 15px; background:black; border:0 none;
 cursor:pointer;
 -webkit-border-radius: 5px;
 border-radius: 5px; }
-<h1>
-<a name="mike--eli" class="anchor" href="#mike--eli"><span class="octicon octicon-link"></span></a>Mike &amp; Eli</h1>
-
-<h2>
-<a name="a-geeky-love-story" class="anchor" href="#a-geeky-love-story"><span class="octicon octicon-link"></span></a>a geeky love story</h2>
-
-<p><br></p><div>
-       <h3>
-<a name="--------" class="anchor" href="#--------"><span class="octicon octicon-link"></span></a>
-        </h3>
-    
-
-<p></p>
-
-
-
-
-<p></p>
-
- </div>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Test maintained by <a href="https://github.com/ValentinesDay">ValentinesDay</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</style>
+<body>
+<h1>Mike & Eli</h1>
+<h2>a geeky love story</h2>
+<input type="password" placeholder="Password"><br>
+    <div class="container">
+      <section id="main_content">
+        <h3>
+        <form action="http://ValentinesDay.github.io/Welcome" method="get">
+    <input type="submit" value="Enter" 
+         name="Submit" id="frm1_submit"/>
+</form>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(-1);
+if (pass1.toLowerCase() == "mikeandeli") {
+alert('You Got it Right!');
+window.open('protectpage.html');
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(-1);
+return " ";
+}
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+</body>
 </html>
